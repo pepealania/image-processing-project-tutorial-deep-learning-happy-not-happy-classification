@@ -1,47 +1,47 @@
-# 🎭 Video-Based Emotion Recognition (RAVDESS + CREMA-D + Cross-Corpus Testing)
+# 🎭 Video-Based Emotion Recognition (RAVDESS + CREMA-D + Cross-Corpus Evaluation)
 
-This project implements a deep learning pipeline for **facial emotion recognition from videos** using **PyTorch** and **ResNet18**. It supports:
+This repository implements a deep learning pipeline for **facial emotion recognition in videos**, using **PyTorch**, **ResNet18**, and a **cross-corpus evaluation strategy**.
 
-- Frame extraction from video datasets
-- Data augmentation
-- Cross-validation training (RAVDESS)
-- Validation on CREMA-D
-- Independent testing pipeline
-- Full evaluation metrics and visualization
+The system is designed to classify facial expressions into a simplified binary task:
+
+- 😊 Happy
+- 😐 Not Happy
 
 ---
 
-## 📂 Datasets Used
+## 📄 Paper / Technical Report
 
-### 🎬 RAVDESS (Training)
-- Source: https://zenodo.org/record/1188976
-- Used for model training (frame-based classification)
-- Emotion labels simplified to:
-  - 😊 Happy → 1
-  - 😐 Not Happy → 0
+This project includes an academic report that describes the full methodology, experiments, and results.
 
----
-
-### 🎥 CREMA-D (Validation / Cross-corpus)
-- Source: https://www.kaggle.com/datasets/ejlok1/cremad
-- Used for validation (domain shift testing)
-- One middle frame extracted per video
+### **Tutorial: Deep Learning for Happy vs. Not Happy Facial Expression Recognition in Video**  
+**Author:** Jose Carlos Alania Aguero  
+**Department:** Electrical & Computing Engineering  
+**Course:** Image Processing (ECE-533), 2026  
+**Institution:** University of New Mexico, Albuquerque, NM, USA  
+**Email:** jalaniaguero99@unm.edu  
 
 ---
 
-### 🎞 AFEW / External Dataset (Optional Testing)
-- Used for final generalization evaluation
-- Completely unseen data
+### 📌 Paper Overview
+
+The report covers:
+
+- Problem formulation (binary emotion recognition)
+- Dataset design and preprocessing
+- Frame extraction from video using OpenCV
+- Deep learning architecture (ResNet18 transfer learning)
+- Cross-validation training strategy
+- Cross-corpus validation (RAVDESS → CREMA-D)
+- Testing methodology with unseen data splits
+- Evaluation metrics and performance analysis
+- Discussion of generalization limitations
 
 ---
 
-## ⚙️ Pipeline Overview
+### 📁 Paper Location
 
-### 1. Frame Extraction (RAVDESS)
+The full report is included in the repository:
 
-- Extracts frames from `.mp4` videos using OpenCV
-- Saves 1 frame per second
-
-```python
-cv2.VideoCapture(video_path)
-cv2.imwrite(output_frame.jpg)
+```text id="paperloc"
+paper/
+└── Tutorial_Deep_Learning_Facial_Emotion_Recognition_in_Video.pdf
