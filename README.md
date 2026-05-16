@@ -15,7 +15,7 @@ This project includes an academic report that describes the full methodology, ex
 
 ### **Tutorial: Deep Learning for Happy vs. Not Happy Facial Expression Recognition in Video**  
 **Author:** Jose Carlos Alania Aguero  
-**Department:** Electrical & Computing Engineering  
+**Student at Department:** Electrical & Computing Engineering  
 **Course:** Image Processing (ECE-533), 2026  
 **Institution:** University of New Mexico, Albuquerque, NM, USA  
 **Email:** jalaniaguero99@unm.edu  
