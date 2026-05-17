@@ -281,7 +281,7 @@ This repository also includes the accompanying academic report:
 | Field       | Information                                             |
 | ----------- | ------------------------------------------------------- |
 | Author      | Jose Carlos Alania Aguero                               |
-| Department  | Electrical & Computing Engineering                      |
+| Student at Department  | Electrical & Computing Engineering                      |
 | Course      | Image Processing (ECE-533), 2026                        |
 | Institution | University of New Mexico                                |
 | Location    | Albuquerque, NM, USA                                    |
