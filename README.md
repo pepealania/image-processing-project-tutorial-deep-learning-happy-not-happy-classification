@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Code
 
-The code is located at [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The code is located at [Github](https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/tree/main/pipeline).
