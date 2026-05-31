@@ -16,9 +16,9 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex flex-col gap-4 p-4 text-sm font-medium">
         <div>
           <Link href="/" className="lvh-brand lvh-title">
-            EchoNet-LVH
+            Image Processing Project
           </Link>
-          <div className="lvh-subtitle text-sm text-zinc-600">A Large Parasternal Long Axis Echocardiography Video Resource</div>
+          <div className="lvh-subtitle text-sm text-zinc-600">Deep Learning classification: Happy vs Not Happy</div>
         </div>
 
         <div className="w-full">
