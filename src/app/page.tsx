@@ -242,33 +242,59 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           {/* ACCESSING-DATASET */}
           <section id="accessing-dataset" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Accessing the Dataset</h2>
-This project uses the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) dataset. The original videos were processed by extracting facial frames and converting the emotion recognition task into a binary image classification problem:
+            <p className="text-zinc-600 dark:text-zinc-400">
+              This project uses the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) dataset. The original videos were processed by extracting facial frames and converting the emotion recognition task into a binary image classification problem:
+            </p>
 
-Happy (1)
-Not Happy (0)
-Dataset Statistics
-<DatasetStatisticsTable />
+            <ul className="list-disc list-inside my-4">
+              <li>Happy (1)</li>
+              <li>Not Happy (0)</li>
+            </ul>
+
+            <h3>Dataset Statistics</h3>
+            <DatasetStatisticsTable />
 
 
-Dataset Access
+  <p className="text-zinc-600 dark:text-zinc-400">
+    The original RAVDESS dataset can be downloaded from:
+  </p>
 
-The original RAVDESS dataset can be downloaded from:
+  <p className="text-zinc-600 dark:text-zinc-400">
+    <a
+      href="https://zenodo.org/record/1188976"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      RAVDESS Dataset Repository
+    </a>
+  </p>
 
-RAVDESS Dataset Repository
+  <p className="text-zinc-600 dark:text-zinc-400">
+    After downloading the videos, frames can be extracted and loaded into a
+    custom PyTorch dataset for training and evaluation.
+  </p>
 
-After downloading the videos, frames can be extracted and loaded into a custom PyTorch dataset for training and evaluation.
+  <h2>License</h2>
 
-License
+  <p className="text-zinc-600 dark:text-zinc-400">
+    RAVDESS is distributed for research and educational purposes. Users should
+    review and comply with the dataset's license and citation requirements
+    before using it in their own projects.
+  </p>
 
-RAVDESS is distributed for research and educational purposes. Users should review and comply with the dataset's license and citation requirements before using it in their own projects.
+  <h2>Citation</h2>
 
-Citation
+  <blockquote>
+    Livingstone, S. R., &amp; Russo, F. A. (2018). <em>The Ryerson Audio-Visual
+    Database of Emotional Speech and Song (RAVDESS)</em>. <em>PLOS ONE</em>,
+    13(5), e0196391.
+  </blockquote>
 
-If you use RAVDESS in academic work, please cite:
-
-Livingstone, S. R., & Russo, F. A. (2018). The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). PLOS ONE, 13(5), e0196391.
-
-The processed version used in this project contains extracted facial frames and balanced binary labels for Happy versus Not Happy classification
+  <p className="text-zinc-600 dark:text-zinc-400">
+    The processed version used in this project contains extracted facial frames
+    and balanced binary labels for <strong>Happy</strong> versus
+    <strong>Not Happy</strong> classification.
+  </p>
           </section>
 
           {/* PAPER */}
