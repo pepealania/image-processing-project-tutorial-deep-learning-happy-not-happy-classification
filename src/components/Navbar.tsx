@@ -21,15 +21,17 @@ export default function Navbar() {
           <div className="lvh-subtitle text-sm text-zinc-600">A Large Parasternal Long Axis Echocardiography Video Resource</div>
         </div>
 
-        <nav className="hidden sm:flex gap-6 lvh-links">
-          <Link href="#home">Home</Link>
-          <Link href="#introduction">Introduction</Link>
-          <Link href="#motivation">Motivation</Link>
-          <Link href="#dataset">Dataset</Link>
-          <Link href="#code">Code</Link>
-          <Link href="#accessing-dataset">Accessing Dataset</Link>
-          <Link href="#paper">Paper</Link>
-        </nav>
+        <div>
+            <nav className="hidden sm:flex gap-6 lvh-links">
+            <Link href="#home">Home</Link>
+            <Link href="#introduction">Introduction</Link>
+            <Link href="#motivation">Motivation</Link>
+            <Link href="#dataset">Dataset</Link>
+            <Link href="#code">Code</Link>
+            <Link href="#accessing-dataset">Accessing Dataset</Link>
+            <Link href="#paper">Paper</Link>
+            </nav>
+        </div>
       </div>
     </header>
   );
