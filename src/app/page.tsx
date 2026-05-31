@@ -31,8 +31,17 @@ export default function Home() {
           <section id="introduction" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Describe your project here...
+Facial emotion recognition is an important research area in computer vision and affective computing, with applications in human-computer interaction, intelligent surveillance, healthcare monitoring, educational technologies, and multimedia analysis. Recent advances in deep learning have significantly improved image classification performance; however, many real-world applications require models that not only achieve high accuracy but also operate efficiently in resource-constrained environments.
+
+To address this challenge, this project investigates the effectiveness of transfer learning using ResNet18 and MobileNetV2. By leveraging pretrained ImageNet representations, the framework reduces training time while improving feature extraction performance on relatively small datasets. The study combines modern training strategies including data augmentation, early stopping, learning-rate scheduling, stratified K-fold cross-validation, and independent holdout testing to provide a robust and reproducible evaluation pipeline.
             </p>
+            <Image
+              className="mx-auto mt-6"
+              src="/introduction.png"
+              alt="Introduction"
+              width={600}
+              height={400}
+            />
           </section>
 
           {/* MOTIVATION */}
