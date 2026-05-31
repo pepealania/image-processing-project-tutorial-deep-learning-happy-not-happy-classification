@@ -35,7 +35,7 @@ export default function DataFlowChart() {
         <div className="text-3xl font-bold">→</div>
 
         {/* Data Partition */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-72 h-48 flex flex-col">
+        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-72 h-58 flex flex-col">
           <h3 className="text-center font-bold uppercase mb-4">
             Data Partition
           </h3>
