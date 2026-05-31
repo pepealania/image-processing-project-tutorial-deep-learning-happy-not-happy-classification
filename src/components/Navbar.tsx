@@ -4,15 +4,24 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="lvh fixed top-0 left-0 w-full bg-white border-b shadow-sm z-50">
+    <header className="lvh fixed top-0 left-0 w-full bg-white border-b shadow-sm z-50">
+      {/* thin top strip with UNM link */}
+      <div className="lvh-top text-xs text-zinc-600">
+        <div className="max-w-6xl mx-auto flex items-center justify-start p-2">
+          <Link href="/" className="mr-4">UNM</Link>
+        </div>
+      </div>
+
+      {/* main header: title + nav */}
       <div className="max-w-6xl mx-auto flex items-center justify-between gap-6 p-4 text-sm font-medium">
-        <div className="flex items-center gap-4">
-          <Link href="#home" className="lvh-brand">
-            UNM
+        <div>
+          <Link href="/" className="lvh-brand lvh-title">
+            EchoNet-LVH
           </Link>
+          <div className="lvh-subtitle text-sm text-zinc-600">A Large Parasternal Long Axis Echocardiography Video Resource</div>
         </div>
 
-        <div className="hidden sm:flex gap-6 lvh-links">
+        <nav className="hidden sm:flex gap-6 lvh-links">
           <Link href="#home">Home</Link>
           <Link href="#introduction">Introduction</Link>
           <Link href="#motivation">Motivation</Link>
@@ -20,8 +29,8 @@ export default function Navbar() {
           <Link href="#code">Code</Link>
           <Link href="#accessing-dataset">Accessing Dataset</Link>
           <Link href="#paper">Paper</Link>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
