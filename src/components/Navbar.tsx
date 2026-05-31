@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="lvh bg-white border-b shadow-sm">
+    <header className="lvh fixed inset-x-0 top-0 z-50 bg-white border-b shadow-sm">
       {/* thin top strip with UNM link */}
       <div className="lvh-top text-xs text-zinc-600">
         <div className="max-w-6xl mx-auto flex items-center justify-start p-2">
