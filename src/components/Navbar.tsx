@@ -6,12 +6,9 @@ export default function Navbar() {
   return (
     <header className="lvh fixed inset-x-0 top-0 z-50 bg-white border-b shadow-sm">
       {/* thin top strip with UNM link */}
-        <div className="lvh-top bg-zinc-100 border-b">
-        <div className="max-w-6xl mx-auto flex items-center h-12 px-4">
-            <Link
-            href="/"
-            className="text-sm font-semibold tracking-wider uppercase"
-            >
+        <div className="lvh-top text-sm font-semibold text-zinc-700">
+        <div className="max-w-6xl mx-auto flex items-center justify-start h-12 px-4">
+            <Link href="/" className="tracking-wide">
             UNM
             </Link>
         </div>
