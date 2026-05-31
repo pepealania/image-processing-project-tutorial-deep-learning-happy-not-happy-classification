@@ -10,8 +10,8 @@ export default function Home() {
 
       <main className="flex flex-1 w-full max-w-4xl flex-col mx-auto py-24 px-6">
         
-        {/* HERO SECTION */}
-        <section id="intro" className="text-center mb-20">
+        {/* HOME */}
+        <section id="home" className="text-center mb-20">
           <Image
             className="mx-auto dark:invert"
             src="/next.svg"
@@ -30,41 +30,41 @@ export default function Home() {
           </p>
         </section>
 
-        {/* DATASET */}
-        <section id="dataset" className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Dataset</h2>
+        {/* INTRODUCTION */}
+        <section id="introduction" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p className="text-zinc-600 dark:text-zinc-400">
-            Describe your dataset here...
+            Describe your project here...
           </p>
         </section>
 
-        {/* METHOD */}
-        <section id="method" className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Method</h2>
+        {/* MOTIVATION */}
+        <section id="motivation" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Motivation</h2>
           <p className="text-zinc-600 dark:text-zinc-400">
             CNN / model architecture explanation...
           </p>
         </section>
 
-        {/* RESULTS */}
-        <section id="results" className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Results</h2>
+        {/* DATASET */}
+        <section id="dataset" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Dataset</h2>
           <p className="text-zinc-600 dark:text-zinc-400">
             Accuracy, graphs, images...
-          </p>
-        </section>
-
-        {/* PIPELINE */}
-        <section id="pipeline" className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Pipeline</h2>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Python preprocessing → model → prediction
           </p>
         </section>
 
         {/* CODE */}
         <section id="code" className="mb-16">
           <h2 className="text-2xl font-semibold mb-4">Code</h2>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            Python preprocessing → model → prediction
+          </p>
+        </section>
+
+        {/* ACCESSING-DATASET */}
+        <section id="accessing-dataset" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Accessing the Dataset</h2>
           <a
             className="text-blue-600 underline"
             href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification"
@@ -73,9 +73,9 @@ export default function Home() {
           </a>
         </section>
 
-        {/* CITATION */}
-        <section id="citation" className="mb-16">
-          <h2 className="text-2xl font-semibold mb-4">Citation</h2>
+        {/* PAPER */}
+        <section id="paper" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Paper</h2>
           <pre className="text-sm bg-zinc-100 dark:bg-zinc-900 p-4 rounded">
           </pre>
         </section>
