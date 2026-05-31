@@ -232,7 +232,10 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           <section id="code" className="mb-16">
             <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
               Code
-            </h2>            
+            </h2>   
+            <h3>Pseudocode</h3>
+            <DataFlowChart />
+            <h3>Code</h3>
             <BinaryClassificationAnimation />
             <p className="text-zinc-600 dark:text-zinc-400">
               Python preprocessing → model → prediction. View the pipeline folder on GitHub:
@@ -344,9 +347,6 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
               </a>
             </div>
           </section>
-          <div>
-            <DataFlowChart />
-          </div>
         </main>
     </div>
   );
