@@ -39,7 +39,7 @@ To address this challenge, this project investigates the effectiveness of transf
               className="mx-auto mt-6"
               src="/images/introduction.png"
               alt="Introduction"
-              width={600}
+              width={500}
               height={400}
             />
           </section>
