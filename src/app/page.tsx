@@ -1,64 +1,85 @@
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex flex-col min-h-screen bg-zinc-50 dark:bg-black font-sans">
+
+      {/* ✅ ADD NAVBAR */}
+      <Navbar />
+
+      <main className="flex flex-1 w-full max-w-4xl flex-col mx-auto py-24 px-6">
+        
+        {/* HERO SECTION */}
+        <section id="intro" className="text-center mb-20">
+          <Image
+            className="mx-auto dark:invert"
+            src="/next.svg"
+            alt="logo"
+            width={120}
+            height={30}
+            priority
+          />
+
+          <h1 className="mt-8 text-4xl font-bold text-black dark:text-white">
+            Image Processing Project
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+            Deep Learning classification: Happy vs Not Happy
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+        </section>
+
+        {/* DATASET */}
+        <section id="dataset" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Dataset</h2>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            Describe your dataset here...
+          </p>
+        </section>
+
+        {/* METHOD */}
+        <section id="method" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Method</h2>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            CNN / model architecture explanation...
+          </p>
+        </section>
+
+        {/* RESULTS */}
+        <section id="results" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Results</h2>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            Accuracy, graphs, images...
+          </p>
+        </section>
+
+        {/* PIPELINE */}
+        <section id="pipeline" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Pipeline</h2>
+          <p className="text-zinc-600 dark:text-zinc-400">
+            Python preprocessing → model → prediction
+          </p>
+        </section>
+
+        {/* CODE */}
+        <section id="code" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Code</h2>
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+            href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            GitHub Repository
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </section>
+
+        {/* CITATION */}
+        <section id="citation" className="mb-16">
+          <h2 className="text-2xl font-semibold mb-4">Citation</h2>
+          <pre className="text-sm bg-zinc-100 dark:bg-zinc-900 p-4 rounded">
+          </pre>
+        </section>
+
       </main>
     </div>
   );
