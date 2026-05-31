@@ -31,7 +31,9 @@ export default function Home() {
 
           {/* INTRODUCTION */}
           <section id="introduction" className="mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
+          <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
+            Introduction
+          </h2>
             <p className="text-zinc-600 dark:text-zinc-400">
 Facial emotion recognition is an important research area in computer vision and affective computing, with applications in human-computer interaction, intelligent surveillance, healthcare monitoring, educational technologies, and multimedia analysis. Recent advances in deep learning have significantly improved image classification performance; however, many real-world applications require models that not only achieve high accuracy but also operate efficiently in resource-constrained environments.
 
