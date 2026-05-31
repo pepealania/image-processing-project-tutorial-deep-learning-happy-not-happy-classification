@@ -282,13 +282,17 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
     before using it in their own projects.
   </p>
 
-  <h2>Citation</h2>
+   <h2>Citation</h2>
 
-  <blockquote>
-    Livingstone, S. R., &amp; Russo, F. A. (2018). <em>The Ryerson Audio-Visual
-    Database of Emotional Speech and Song (RAVDESS)</em>. <em>PLOS ONE</em>,
-    13(5), e0196391.
-  </blockquote>
+  <p>If you use RAVDESS in academic work, please cite:</p>
+
+  <div className="mt-4 rounded-md border-l-4 border-blue-600 bg-slate-50 p-4">
+    <p>
+      Livingstone, S. R., &amp; Russo, F. A. (2018).
+      <em> The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)</em>.
+      <em> PLOS ONE</em>, 13(5), e0196391.
+    </p>
+  </div>
 
   <p className="text-zinc-600 dark:text-zinc-400 mt-4">
     The processed version used in this project contains extracted facial frames
