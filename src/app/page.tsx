@@ -242,7 +242,7 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           {/* ACCESSING-DATASET */}
           <section id="accessing-dataset" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Accessing the Dataset</h2>
-            <p className="text-zinc-600 dark:text-zinc-400">
+            <p className="text-zinc-600 dark:text-zinc-400 mb-4">
               This project uses the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) dataset. The original videos were processed by extracting facial frames and converting the emotion recognition task into a binary image classification problem:
             </p>
 
@@ -254,12 +254,12 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
             <h3>Dataset Statistics</h3>
             <DatasetStatisticsTable />
 
-
-  <p className="text-zinc-600 dark:text-zinc-400">
+  <h2>Dataset Access</h2>
+  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
     The original RAVDESS dataset can be downloaded from:
   </p>
 
-  <p className="text-zinc-600 dark:text-zinc-400">
+  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
     <a
       href="https://zenodo.org/record/1188976"
       target="_blank"
@@ -269,14 +269,14 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
     </a>
   </p>
 
-  <p className="text-zinc-600 dark:text-zinc-400">
+  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
     After downloading the videos, frames can be extracted and loaded into a
     custom PyTorch dataset for training and evaluation.
   </p>
 
   <h2>License</h2>
 
-  <p className="text-zinc-600 dark:text-zinc-400">
+  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
     RAVDESS is distributed for research and educational purposes. Users should
     review and comply with the dataset's license and citation requirements
     before using it in their own projects.
@@ -290,7 +290,7 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
     13(5), e0196391.
   </blockquote>
 
-  <p className="text-zinc-600 dark:text-zinc-400">
+  <p className="text-zinc-600 dark:text-zinc-400 mt-4">
     The processed version used in this project contains extracted facial frames
     and balanced binary labels for <strong>Happy</strong> versus
     <strong>Not Happy</strong> classification.
