@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import BinaryClassificationAnimation from "@/components/BinaryClassificationAnimation";
+import DatasetStatisticsTable from "@/components/DatasetStatisticsTable";
 
 export default function Home() {
   return (
@@ -246,15 +247,9 @@ This project uses the Ryerson Audio-Visual Database of Emotional Speech and Song
 Happy (1)
 Not Happy (0)
 Dataset Statistics
-Metric	Value
-Total Videos	2,760
-Total Frames Extracted	9,003
-Original Happy Frames	1,166
-Original Not Happy Frames	7,837
-Balanced Dataset Size	2,332
-Train/Validation Pool	1,865
-Holdout Test Set	467
-Cross-Validation	5-Fold Stratified
+<DatasetStatisticsTable />
+
+
 Dataset Access
 
 The original RAVDESS dataset can be downloaded from:
