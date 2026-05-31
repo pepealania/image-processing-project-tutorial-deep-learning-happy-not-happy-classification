@@ -13,7 +13,7 @@ export default function Navbar() {
       </div>
 
       {/* main header: title + nav */}
-      <div className="max-w-6xl mx-auto flex items-center justify-between gap-6 p-4 text-sm font-medium">
+      <div className="max-w-6xl mx-auto flex flex-col gap-4 p-4 text-sm font-medium">
         <div>
           <Link href="/" className="lvh-brand lvh-title">
             EchoNet-LVH
@@ -21,8 +21,8 @@ export default function Navbar() {
           <div className="lvh-subtitle text-sm text-zinc-600">A Large Parasternal Long Axis Echocardiography Video Resource</div>
         </div>
 
-        <div>
-            <nav className="hidden sm:flex gap-6 lvh-links">
+        <div className="w-full">
+          <nav className="flex flex-wrap gap-4 lvh-links">
             <Link href="#home">Home</Link>
             <Link href="#introduction">Introduction</Link>
             <Link href="#motivation">Motivation</Link>
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link href="#code">Code</Link>
             <Link href="#accessing-dataset">Accessing Dataset</Link>
             <Link href="#paper">Paper</Link>
-            </nav>
+          </nav>
         </div>
       </div>
     </header>
