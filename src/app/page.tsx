@@ -2,6 +2,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import BinaryClassificationAnimation from "@/components/BinaryClassificationAnimation";
 import DatasetStatisticsTable from "@/components/DatasetStatisticsTable";
+import DataFlowChart from "@/components/DataFlowChart";
 
 export default function Home() {
   return (
@@ -343,7 +344,9 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
               </a>
             </div>
           </section>
-
+          <div>
+            <DataFlowChart />
+          </div>
         </main>
     </div>
   );
