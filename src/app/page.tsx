@@ -50,7 +50,9 @@ To address this challenge, this project investigates the effectiveness of transf
 
           {/* MOTIVATION */}
           <section id="motivation" className="mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Motivation</h2>
+            <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
+              Motivation
+            </h2>
             <p className="text-zinc-600 dark:text-zinc-400">
 Facial emotion recognition has become an increasingly important area of research within computer vision and artificial intelligence due to its potential applications in human-computer interaction, healthcare, education, security systems, and affective computing. The ability of machines to automatically interpret human emotions from facial expressions can improve communication between humans and intelligent systems and enable more adaptive and personalized technologies.
 
@@ -66,8 +68,9 @@ Ultimately, the motivation of this project is to develop a robust, reproducible,
 
           {/* DATASET */}
           <section id="dataset" className="mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Dataset</h2>
-
+            <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
+              Dataset
+            </h2>
 <p className="text-zinc-600 dark:text-zinc-400">
 The dataset used in this project is derived from the <strong>Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)</strong>, a widely used benchmark dataset for emotion recognition research. While the original RAVDESS dataset contains both audio and video recordings of actors expressing various emotions, this study focuses exclusively on the visual modality by extracting image frames from the video recordings and using them for binary image classification.
 </p>
@@ -226,7 +229,9 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
 
           {/* CODE */}
           <section id="code" className="mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Code</h2>
+            <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
+              Code
+            </h2>            
             <BinaryClassificationAnimation />
             <p className="text-zinc-600 dark:text-zinc-400">
               Python preprocessing → model → prediction. View the pipeline folder on GitHub:
@@ -243,7 +248,9 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
 
           {/* ACCESSING-DATASET */}
           <section id="accessing-dataset" className="mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Accessing the Dataset</h2>
+            <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
+              Accessing the Dataset
+            </h2>
             <p className="text-zinc-600 dark:text-zinc-400 mb-4">
               This project uses the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) dataset. The original videos were processed by extracting facial frames and converting the emotion recognition task into a binary image classification problem:
             </p>
@@ -305,7 +312,9 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
 
           {/* PAPER */}
           <section id="paper" className="mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Paper</h2>
+            <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
+              Paper
+            </h2>
             <p className="text-zinc-700">
               The complete research paper for this project is available on GitHub.
               It describes the dataset preparation process, frame extraction pipeline,
