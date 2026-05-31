@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import BinaryClassificationAnimation from "@/components/BinaryClassificationAnimation";
 import DatasetStatisticsTable from "@/components/DatasetStatisticsTable";
 import DataFlowChart from "@/components/DataFlowChart";
+import Pseudocode from "@/components/Pseudocode";
 
 export default function Home() {
   return (
@@ -235,6 +236,8 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
             </h2>   
             <h3>Flowchart</h3>
             <DataFlowChart />
+            <h3>Pseudocode</h3>
+            <Pseudocode />
             <h3>Code</h3>
             <BinaryClassificationAnimation />
             <p className="text-zinc-600 dark:text-zinc-400">
