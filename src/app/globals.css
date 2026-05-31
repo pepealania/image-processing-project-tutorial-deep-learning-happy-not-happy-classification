@@ -99,5 +99,10 @@ body {
   color: #444;
 }
 
+/* fix anchor scrolling for the fixed navbar */
+section[id] {
+  scroll-margin-top: 130px;
+}
+
 /* remove fixed-header spacing when navbar is in page flow */
 main { padding-top: 0; }
