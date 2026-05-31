@@ -6,7 +6,9 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-zinc-50 dark:bg-black font-sans">
 
       {/* ✅ ADD NAVBAR */}
-      <Navbar />
+      <div>
+        <Navbar />
+      </div>
 
       <main className="flex flex-1 w-full max-w-4xl flex-col mx-auto py-24 px-6">
         
