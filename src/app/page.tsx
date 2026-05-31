@@ -241,12 +241,39 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           {/* ACCESSING-DATASET */}
           <section id="accessing-dataset" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Accessing the Dataset</h2>
-            <a
-              className="text-blue-600 underline"
-              href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification"
-            >
-              GitHub Repository
-            </a>
+This project uses the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS) dataset. The original videos were processed by extracting facial frames and converting the emotion recognition task into a binary image classification problem:
+
+Happy (1)
+Not Happy (0)
+Dataset Statistics
+Metric	Value
+Total Videos	2,760
+Total Frames Extracted	9,003
+Original Happy Frames	1,166
+Original Not Happy Frames	7,837
+Balanced Dataset Size	2,332
+Train/Validation Pool	1,865
+Holdout Test Set	467
+Cross-Validation	5-Fold Stratified
+Dataset Access
+
+The original RAVDESS dataset can be downloaded from:
+
+RAVDESS Dataset Repository
+
+After downloading the videos, frames can be extracted and loaded into a custom PyTorch dataset for training and evaluation.
+
+License
+
+RAVDESS is distributed for research and educational purposes. Users should review and comply with the dataset's license and citation requirements before using it in their own projects.
+
+Citation
+
+If you use RAVDESS in academic work, please cite:
+
+Livingstone, S. R., & Russo, F. A. (2018). The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). PLOS ONE, 13(5), e0196391.
+
+The processed version used in this project contains extracted facial frames and balanced binary labels for Happy versus Not Happy classification
           </section>
 
           {/* PAPER */}
