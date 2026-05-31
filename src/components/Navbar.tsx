@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex flex-col gap-4 p-4 text-sm font-medium">
         <div>
           <Link href="/" className="lvh-brand lvh-title">
-            Image Processing Project
+            Image Binary Classification Tutorial
           </Link>
           <div className="lvh-subtitle text-sm text-zinc-600">Deep Learning classification: Happy vs Not Happy</div>
         </div>

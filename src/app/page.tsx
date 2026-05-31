@@ -22,7 +22,7 @@ export default function Home() {
           />
 
           <h1 className="mt-8 text-4xl font-bold text-black dark:text-white">
-            Image Processing Project
+            Image Binary Classification Tutorial
           </h1>
 
           <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
