@@ -8,7 +8,7 @@ export default function Home() {
         <Navbar />
           
           {/* HOME */}
-          <section id="home" className="text-center mb-20">
+          <section id="home" className="text-center mb-20 mt-12">
             <Image
               className="mx-auto dark:invert"
               src="/next.svg"
