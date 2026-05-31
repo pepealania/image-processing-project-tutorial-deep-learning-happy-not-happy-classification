@@ -304,8 +304,33 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           {/* PAPER */}
           <section id="paper" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Paper</h2>
-            <pre className="text-sm bg-zinc-100 dark:bg-zinc-900 p-4 rounded">
-            </pre>
+            <p className="text-zinc-700">
+              The complete research paper for this project is available on GitHub.
+              It describes the dataset preparation process, frame extraction pipeline,
+              deep learning methodology, model training, evaluation metrics, and
+              comparative results between ResNet18 and MobileNetV2.
+            </p>
+
+            <div className="mt-6 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+              <h3 className="text-xl font-semibold">
+                Image Processing Project: Deep Learning Happy vs Not Happy Classification
+              </h3>
+
+              <p className="mt-3 text-zinc-600">
+                Facial emotion recognition using deep learning and transfer learning
+                techniques applied to the RAVDESS dataset with binary classification
+                (Happy vs Not Happy).
+              </p>
+
+              <a
+                href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/tree/main/paper"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+              >
+                View Paper →
+              </a>
+            </div>
           </section>
 
         </main>
