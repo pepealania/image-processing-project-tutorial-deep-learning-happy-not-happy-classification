@@ -63,9 +63,161 @@ Ultimately, the motivation of this project is to develop a robust, reproducible,
           {/* DATASET */}
           <section id="dataset" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Dataset</h2>
-            <p className="text-zinc-600 dark:text-zinc-400">
-              Accuracy, graphs, images...
-            </p>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+The dataset used in this project is derived from the <strong>Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)</strong>, a widely used benchmark dataset for emotion recognition research. While the original RAVDESS dataset contains both audio and video recordings of actors expressing various emotions, this study focuses exclusively on the visual modality by extracting image frames from the video recordings and using them for binary image classification.
+</p>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+A total of <strong>2,760 video files</strong> were successfully extracted from the RAVDESS dataset. From these videos, <strong>9,003 image frames</strong> were generated and loaded into the dataset. Labels were assigned automatically based on the emotion code embedded within each filename. Frames corresponding to emotion code <strong>03 (Happy)</strong> were assigned to the positive class (<strong>Happy = 1</strong>), while frames associated with all other emotion categories were grouped into the negative class (<strong>Not Happy = 0</strong>).
+</p>
+
+<h3>Original Dataset Distribution</h3>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+The initial dataset was highly imbalanced, containing:
+</p>
+
+<ul>
+    <li><strong>Happy frames (Class 1):</strong> 1,166 samples (12.95%)</li>
+    <li><strong>Not Happy frames (Class 0):</strong> 7,837 samples (87.05%)</li>
+    <li><strong>Total frames:</strong> 9,003 samples</li>
+</ul>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+Such class imbalance can bias deep learning models toward the majority class and negatively affect classification performance. To address this issue, a balancing procedure was applied by downsampling the majority class ("Not Happy") to match the number of samples in the minority class ("Happy").
+</p>
+
+<h3>Balanced Dataset</h3>
+
+<table className="min-w-full border-collapse border border-slate-300">
+    <thead className="bg-slate-100">
+        <tr>
+            <th className="border border-slate-300 px-3 py-2 text-left">Class</th>
+            <th className="border border-slate-300 px-3 py-2 text-left">Number of Samples</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2">Happy (1)</td>
+            <td className="border border-slate-300 px-3 py-2">1,166</td>
+        </tr>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2">Not Happy (0)</td>
+            <td className="border border-slate-300 px-3 py-2">1,166</td>
+        </tr>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2 font-semibold">Total</td>
+            <td className="border border-slate-300 px-3 py-2 font-semibold">2,332</td>
+        </tr>
+    </tbody>
+</table>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+After balancing, the dataset contained <strong>2,332 samples</strong> equally distributed between the two classes.
+</p>
+
+<h3>Train-Test Split</h3>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+The balanced dataset was divided using a <strong>stratified 80/20 split</strong>, preserving the class distribution across all subsets. This resulted in:
+</p>
+
+<ul>
+    <li><strong>Training/Validation Pool:</strong> 1,865 samples (80%)</li>
+    <li><strong>Independent Generalization Test Set:</strong> 467 samples (20%)</li>
+</ul>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+The independent test set was completely isolated from the training process and used only for final model evaluation, providing an unbiased estimate of real-world generalization performance.
+</p>
+
+<h3>5-Fold Cross-Validation</h3>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+To obtain robust performance estimates and reduce dependence on a single train-validation split, the training/validation pool was further partitioned using <strong>Stratified 5-Fold Cross-Validation</strong>.
+</p>
+
+<table className="min-w-full border-collapse border border-slate-300">
+    <thead className="bg-slate-100">
+        <tr>
+            <th className="border border-slate-300 px-3 py-2 text-left">Fold</th>
+            <th className="border border-slate-300 px-3 py-2 text-left">Training Samples</th>
+            <th className="border border-slate-300 px-3 py-2 text-left">Validation Samples</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2">Fold 1</td>
+            <td className="border border-slate-300 px-3 py-2">1,492</td>
+            <td className="border border-slate-300 px-3 py-2">373</td>
+        </tr>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2">Fold 2</td>
+            <td className="border border-slate-300 px-3 py-2">1,492</td>
+            <td className="border border-slate-300 px-3 py-2">373</td>
+        </tr>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2">Fold 3</td>
+            <td className="border border-slate-300 px-3 py-2">1,492</td>
+            <td className="border border-slate-300 px-3 py-2">373</td>
+        </tr>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2">Fold 4</td>
+            <td className="border border-slate-300 px-3 py-2">1,492</td>
+            <td className="border border-slate-300 px-3 py-2">373</td>
+        </tr>
+        <tr>
+            <td className="border border-slate-300 px-3 py-2">Fold 5</td>
+            <td className="border border-slate-300 px-3 py-2">1,492</td>
+            <td className="border border-slate-300 px-3 py-2">373</td>
+        </tr>
+    </tbody>
+</table>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+This procedure allowed every sample in the training/validation pool to be used for validation exactly once while participating in training during the remaining folds. Such a strategy provides a more reliable estimate of model performance and helps detect overfitting.
+</p>
+
+<h3>Preprocessing and Data Augmentation</h3>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+Prior to training, all images were resized to <strong>224 × 224 pixels</strong> and normalized using the standard <strong>ImageNet mean and standard deviation values</strong> to ensure compatibility with pretrained convolutional neural network architectures.
+</p>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+Data augmentation techniques were applied exclusively to the training subsets and included:
+</p>
+
+<ul>
+    <li>Random horizontal flipping</li>
+    <li>Random rotations</li>
+    <li>Random cropping</li>
+</ul>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+These transformations introduce additional variability into the training data and help improve model generalization.
+</p>
+
+<h3>Data Loading Pipeline</h3>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+The dataset pipeline was implemented using a custom PyTorch dataset class that dynamically loads images during execution, reducing memory requirements and enabling efficient mini-batch training.
+</p>
+
+<ul>
+    <li><strong>Total videos processed:</strong> 2,760</li>
+    <li><strong>Total extracted frames:</strong> 9,003</li>
+    <li><strong>Balanced dataset size:</strong> 2,332</li>
+    <li><strong>Training/Validation samples:</strong> 1,865</li>
+    <li><strong>Independent test samples:</strong> 467</li>
+    <li><strong>Number of folds:</strong> 5</li>
+    <li><strong>Generalization test batches:</strong> 15</li>
+</ul>
+
+<p className="text-zinc-600 dark:text-zinc-400">
+Overall, the dataset preparation pipeline transforms the original RAVDESS video recordings into a balanced binary facial emotion classification dataset containing <strong>2,332 samples</strong>, supported by a rigorous evaluation protocol based on stratified cross-validation and independent holdout testing. This design ensures reproducibility, balanced class representation, and reliable benchmarking of transfer learning approaches using ResNet18 and MobileNetV2.
+</p>            
           </section>
 
           {/* CODE */}
