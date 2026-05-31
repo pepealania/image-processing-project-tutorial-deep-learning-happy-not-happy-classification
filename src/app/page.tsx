@@ -233,7 +233,7 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
             <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
               Code
             </h2>   
-            <h3>Pseudocode</h3>
+            <h3>Flowchart</h3>
             <DataFlowChart />
             <h3>Code</h3>
             <BinaryClassificationAnimation />
