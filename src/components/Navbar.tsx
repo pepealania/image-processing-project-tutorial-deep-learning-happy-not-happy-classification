@@ -23,13 +23,13 @@ export default function Navbar() {
 
         <div className="w-full">
           <nav className="flex flex-wrap gap-4 lvh-links">
-            <Link href="/#home">Home</Link>
-            <Link href="/#introduction">Introduction</Link>
-            <Link href="/#motivation">Motivation</Link>
-            <Link href="/#dataset">Dataset</Link>
-            <Link href="/#code">Code</Link>
-            <Link href="/#accessing-dataset">Accessing Dataset</Link>
-            <Link href="/#paper">Paper</Link>
+            <a href="#home">Home</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#motivation">Motivation</a>
+            <a href="#dataset">Dataset</a>
+            <a href="#code">Code</a>
+            <a href="#accessing-dataset">Accessing Dataset</a>
+            <a href="#paper">Paper</a>
           </nav>
         </div>
       </div>
