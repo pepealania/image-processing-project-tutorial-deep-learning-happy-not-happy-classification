@@ -48,7 +48,15 @@ To address this challenge, this project investigates the effectiveness of transf
           <section id="motivation" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Motivation</h2>
             <p className="text-zinc-600 dark:text-zinc-400">
-              CNN / model architecture explanation...
+Facial emotion recognition has become an increasingly important area of research within computer vision and artificial intelligence due to its potential applications in human-computer interaction, healthcare, education, security systems, and affective computing. The ability of machines to automatically interpret human emotions from facial expressions can improve communication between humans and intelligent systems and enable more adaptive and personalized technologies.
+
+Recent advances in deep learning have significantly improved image classification performance; however, selecting an appropriate neural network architecture often involves balancing predictive accuracy and computational efficiency. High-capacity models can achieve strong classification results but may require substantial computational resources, limiting their deployment on mobile devices, embedded platforms, and other resource-constrained environments. Conversely, lightweight architectures are designed for efficient inference but may sacrifice some predictive performance. Understanding this trade-off is essential for designing practical real-world systems.
+
+This project is motivated by the need to evaluate whether lightweight deep learning models can achieve performance comparable to more established convolutional neural network architectures in a facial emotion classification task. Using image frames extracted from the RAVDESS dataset, the study investigates the effectiveness of transfer learning with ResNet18 and MobileNetV2 for binary classification of happy versus not-happy facial expressions. The project also seeks to establish a rigorous evaluation methodology through stratified 5-fold cross-validation and independent holdout testing, providing reliable estimates of model generalization performance.
+
+In addition to addressing a practical computer vision problem, this work serves as an opportunity to apply and integrate several important machine learning concepts, including convolutional neural networks, transfer learning, data augmentation, hyperparameter optimization, early stopping, and model evaluation. By comparing a residual-based architecture with a lightweight mobile-oriented architecture under identical experimental conditions, the study aims to provide insights into the relationship between classification accuracy, model complexity, and deployment efficiency. These considerations are increasingly relevant as artificial intelligence applications continue to expand toward edge computing and real-time intelligent systems.
+
+Ultimately, the motivation of this project is to develop a robust, reproducible, and computationally efficient deep learning framework for facial emotion classification while contributing to the broader understanding of how modern transfer learning techniques can be applied to practical image recognition problems.
             </p>
           </section>
 
