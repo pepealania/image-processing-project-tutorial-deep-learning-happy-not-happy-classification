@@ -99,5 +99,5 @@ body {
   color: #444;
 }
 
-/* keep header above content spacing */
-main { padding-top: 112px; }
+/* remove fixed-header spacing when navbar is in page flow */
+main { padding-top: 0; }

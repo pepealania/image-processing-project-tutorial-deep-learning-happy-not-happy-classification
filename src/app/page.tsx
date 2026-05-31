@@ -4,14 +4,8 @@ import Navbar from "@/components/Navbar";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-zinc-50 dark:bg-black font-sans">
-
-      {/* ✅ ADD NAVBAR */}
-      <div>
+      <main className="flex flex-1 w-full max-w-4xl flex-col mx-auto py-8 px-6">
         <Navbar />
-      </div>
-
-      <div>
-        <main className="flex flex-1 w-full max-w-4xl flex-col mx-auto py-24 px-6">
           
           {/* HOME */}
           <section id="home" className="text-center mb-20">
@@ -83,8 +77,7 @@ export default function Home() {
             </pre>
           </section>
 
-        </main>        
-      </div>
+        </main>
     </div>
   );
 }
