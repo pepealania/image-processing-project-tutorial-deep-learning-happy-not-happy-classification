@@ -11,7 +11,7 @@ export default function Home() {
           <section id="home" className="text-center mb-20 mt-12">
             <Image
               className="mx-auto dark:invert"
-              src="/next.svg"
+              src="/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/next.svg"
               alt="logo"
               width={120}
               height={30}
@@ -37,7 +37,7 @@ To address this challenge, this project investigates the effectiveness of transf
             </p>
             <Image
               className="mx-auto mt-6"
-              src="/images/introduction.png"
+              src="/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/images/introduction.png"
               alt="Introduction"
               width={500}
               height={400}
