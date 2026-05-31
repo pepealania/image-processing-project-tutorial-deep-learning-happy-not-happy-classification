@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --unm-maroon: #7B0F11;
+  --unm-gold: #F0C300;
+  --lvh-link: #333333;
 }
 
 @theme inline {
@@ -23,4 +26,52 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LVH-like navbar and link styles (UNM branding) */
+.lvh {
+  background: var(--background);
+  border-bottom-color: rgba(0,0,0,0.06);
+}
+
+.lvh-brand {
+  color: var(--unm-maroon);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.lvh-links a {
+  color: var(--lvh-link);
+  text-decoration: none;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.lvh-links a:hover {
+  color: var(--unm-maroon);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* small screens: show brand and collapse links */
+@media (max-width: 639px) {
+  .lvh .lvh-links { display: none; }
+}
+
+/* subtle page heading style used in LVH */
+.lvh-page-title {
+  color: var(--unm-maroon);
+  font-size: 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+/* utility to mimic LVH content container */
+.lvh-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
