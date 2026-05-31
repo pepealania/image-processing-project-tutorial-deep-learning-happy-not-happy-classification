@@ -224,7 +224,15 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           <section id="code" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Code</h2>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Python preprocessing → model → prediction
+              Python preprocessing → model → prediction. View the pipeline folder on GitHub:
+              <a
+                className="ml-1 text-blue-600 underline"
+                href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/tree/main/pipeline"
+                target="_blank"
+                rel="noreferrer"
+              >
+                pipeline
+              </a>
             </p>
           </section>
 
