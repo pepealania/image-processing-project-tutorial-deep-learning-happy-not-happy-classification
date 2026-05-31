@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import BinaryClassificationAnimation from "@/components/BinaryClassificationAnimation";
 
 export default function Home() {
   return (
@@ -223,6 +224,7 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           {/* CODE */}
           <section id="code" className="mb-16">
             <h2 className="text-2xl font-semibold mb-4">Code</h2>
+            <BinaryClassificationAnimation />
             <p className="text-zinc-600 dark:text-zinc-400">
               Python preprocessing → model → prediction. View the pipeline folder on GitHub:
               <a
