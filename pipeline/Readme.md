@@ -7,3 +7,4 @@ Please download the notebook file and open it in Google Colab.
 <h2 align="center">
 GitHub's notebook preview is not working correctly.
 </h2>
+Two files are provided, one with outputs and the second one without outputs.
