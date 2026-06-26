@@ -1,15 +1,18 @@
 export default function DataFlowChart() {
+  const box =
+    "flex-1 min-w-0 border-2 border-gray-700 bg-gray-50 p-3 flex flex-col";
+  const inner =
+    "border border-gray-600 flex-1 flex flex-col justify-center items-center text-center text-xs";
+
   return (
     <section className="w-full py-8">
-      <div className="flex w-full items-center justify-between gap-2">
+      <div className="flex items-stretch gap-2 w-full">
 
-        {/* Dataset */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-64 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
             Dataset
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col items-center justify-center text-center text-sm">
+          <div className={inner}>
             <p>RAVDESS Video Frames</p>
             <p>2,332 Images</p>
             <p>Binary Labels</p>
@@ -17,133 +20,118 @@ export default function DataFlowChart() {
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Preprocessing */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-72 h-52 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
             Preprocessing
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col justify-center text-center text-sm">
+          <div className={inner}>
             <p>Label Assignment</p>
-            <p>Class Balancing (Downsampling)</p>
+            <p>Class Balancing</p>
             <p>Resize 224×224</p>
-            <p>ImageNet Normalization</p>
+            <p>Normalization</p>
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Data Split */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-80 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
             Data Partitioning
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col justify-center text-center text-sm">
-            <p>Stratified 80/20 Split</p>
+          <div className={inner}>
+            <p>80/20 Split</p>
             <p>Train/Val: 1,865</p>
-            <p>Test Set: 467 (Holdout)</p>
-            <p>No Leakage to Test Set</p>
+            <p>Test: 467</p>
+            <p>No Leakage</p>
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Cross Validation */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-80 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
-            5-Fold Cross Validation
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
+            5-Fold CV
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col justify-center text-center text-sm">
-            <p>StratifiedKFold (K=5)</p>
-            <p>Train on 4 folds</p>
-            <p>Validate on 1 fold</p>
-            <p>Repeat for all folds</p>
+          <div className={inner}>
+            <p>StratifiedKFold</p>
+            <p>Train ×4</p>
+            <p>Validate ×1</p>
+            <p>Repeat ×5</p>
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Transfer Learning */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-[420px] h-52 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
-            Transfer Learning (ImageNet Pretrained)
+        <div className={`${box} flex-[1.4]`}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
+            Transfer Learning
           </h3>
 
-          <div className="flex-1 flex items-center justify-center gap-6">
-            <div className="border border-gray-600 w-36 h-24 flex items-center justify-center text-sm font-medium">
+          <div className="flex flex-1 items-center gap-2">
+            <div className="flex-1 border border-gray-600 p-2 text-center text-xs font-medium">
               ResNet18
             </div>
 
-            <div className="border border-gray-600 w-36 h-24 flex items-center justify-center text-sm font-medium">
+            <div className="flex-1 border border-gray-600 p-2 text-center text-xs font-medium">
               MobileNetV2
             </div>
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Training */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-80 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
             Training
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col justify-center text-center text-sm">
-            <p>Adam Optimizer</p>
-            <p>Cross-Entropy Loss</p>
+          <div className={inner}>
+            <p>Adam</p>
+            <p>Cross-Entropy</p>
             <p>LR Scheduler</p>
             <p>Early Stopping</p>
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Model Selection */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-72 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
             Model Selection
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col justify-center text-center text-sm">
-            <p>Best Fold Selected</p>
-            <p>Lowest Validation Loss</p>
-            <p>Best Model Saved</p>
+          <div className={inner}>
+            <p>Best Fold</p>
+            <p>Lowest Val Loss</p>
+            <p>Saved Model</p>
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Evaluation */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-72 h-52 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
             Evaluation
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col justify-center text-center text-sm">
+          <div className={inner}>
             <p>Accuracy</p>
             <p>Precision</p>
             <p>Recall</p>
-            <p>F1-Score</p>
+            <p>F1</p>
             <p>Confusion Matrix</p>
           </div>
         </div>
 
-        <div className="text-3xl font-bold">→</div>
+        <div className="self-center text-xl font-bold">→</div>
 
-        {/* Results */}
-        <div className="border-2 border-gray-700 bg-gray-50 p-4 w-72 flex flex-col">
-          <h3 className="text-center font-bold uppercase mb-4">
+        <div className={box}>
+          <h3 className="mb-3 text-center font-bold uppercase text-sm">
             Final Results
           </h3>
-
-          <div className="border border-gray-600 flex-1 flex flex-col items-center justify-center text-center text-sm">
+          <div className={inner}>
             <p>ResNet18 vs MobileNetV2</p>
-            <p>Test Set Performance</p>
-            <p>Generalization Analysis</p>
+            <p>Test Performance</p>
+            <p>Generalization</p>
           </div>
         </div>
 
