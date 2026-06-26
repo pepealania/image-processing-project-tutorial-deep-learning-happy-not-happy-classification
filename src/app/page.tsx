@@ -351,6 +351,7 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
             </div>
           </section>
         </main>
+        <DataFlowChart />
     </div>
   );
 }
