@@ -351,7 +351,11 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
             </div>
           </section>
         </main>
+      <div className="flex justify-center py-8">
+        <div className="scale-90 origin-top">
           <DataFlowChart />
+        </div>
+      </div>
     </div>
   );
 }
