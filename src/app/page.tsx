@@ -321,7 +321,7 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           {/* PAPER */}
           <section id="paper" className="mb-16">
             <h2 className="mb-8 text-5xl font-bold tracking-tight text-[#BA0C2F]">
-              Paper
+              Papers
             </h2>
             <p className="text-zinc-700">
               The complete research paper for this project is available on GitHub.
