@@ -356,7 +356,7 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
               </p>
 
               <a
-                href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/tree/main/paper"
+                href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/blob/main/paper/Transfer_Learning_for_Binary_Facial_Emotion_Classification__A_Comparative_Study_of_ResNet18_and_MobileNetV2.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-4 inline-block rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
