@@ -324,10 +324,6 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
               Papers
             </h2>
             <p className="text-zinc-700">
-              The complete research paper for this project is available on GitHub.
-              It describes the dataset preparation process, frame extraction pipeline,
-              deep learning methodology, model training, evaluation metrics, and
-              comparative results between ResNet18 and MobileNetV2.
             </p>
 
             <div className="mt-6 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
@@ -350,6 +346,24 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
                 View Paper →
               </a>
             </div>
+            <div className="mt-6 rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+              <h3 className="text-xl font-semibold">
+                Transfer Learning for Binary Facial Emotion Classification: A Comparative Evaluation of ResNet18 and MobileNetV2
+              </h3>
+
+              <p className="mt-3 text-zinc-600">
+                This study investigates transfer learning-based binary facial emotion classification using ResNet18 and MobileNetV2. A comprehensive evaluation is conducted to analyze their accuracy, robustness, and computational efficiency across cross-validation and test data.
+              </p>
+
+              <a
+                href="https://github.com/pepealania/image-processing-project-tutorial-deep-learning-happy-not-happy-classification/tree/main/paper"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block rounded-md bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+              >
+                View Paper →
+              </a>
+            </div>            
           </section>
         </main>
       <div className="flex justify-center py-8">
