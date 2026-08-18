@@ -5,6 +5,7 @@ import DatasetStatisticsTable from "@/components/DatasetStatisticsTable";
 import DataFlowChart from "@/components/DataFlowChart";
 import Pseudocode from "@/components/Pseudocode";
 import DataFlowChartBelow from "@/components/DataFlowChartBelow";
+import DataFlowChartPaper from "@/components/DataFlowChartPaper";
 
 export default function Home() {
   return (
@@ -371,6 +372,11 @@ Overall, the dataset preparation pipeline transforms the original RAVDESS video 
           <DataFlowChartBelow />
         </div>
       </div>
+      <div className="flex justify-center py-8">
+          <div className="scale-90 origin-top">
+            <DataFlowChartPaper />
+          </div>
+        </div>
     </div>
   );
 }
