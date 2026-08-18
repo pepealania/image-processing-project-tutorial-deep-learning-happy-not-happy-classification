@@ -5,7 +5,7 @@ export default function DataFlowChart() {
     "border border-gray-600 flex-1 flex flex-col justify-center items-center text-center text-xs";
 
   return (
-    <section className="w-full py-8">
+    <section className="w-full py-8 text-blue-800">
       <div className="flex items-stretch gap-2 w-full">
 
         <div className={box}>
