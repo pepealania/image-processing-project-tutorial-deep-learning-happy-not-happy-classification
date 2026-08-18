@@ -1,6 +1,6 @@
 export default function DataFlowChart() {
   return (
-    <section className="w-full overflow-x-auto py-8">
+    <section className="w-full overflow-x-auto py-8 text-blue-800">
       <div className="min-w-[1400px] flex items-center justify-start gap-4">
 
         {/* Dataset */}
